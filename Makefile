@@ -4,8 +4,14 @@ all:
 .DELETE_ON_ERROR:
 .SECONDARY:
 
+# Render Markdown to HTML
 %.html: %.md
-	pandoc -so $@ $<
+	pandoc --template=template -o $@ $^
 
-%.pdf: %.md
-	pandoc -o $@ $<
+# Render Markdown to LaTeX
+%.tex: %.md
+	pandoc --template=template -o $@ $<
+
+# Render LaTeX to PDF
+%.pdf: %.tex
+	pdflatex -halt-on-error $<

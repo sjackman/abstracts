@@ -6,9 +6,9 @@ author: |
   BC Cancer Agency Genome Sciences Centre, Vancouver, BC, Canada
 date: 2015-02-21
 keywords: [genome sequence assembly, de Bruijn graph, spaced-seed k-mer, Bloom filter]
+documentclass: wlpeerj
+abstract: Adapting to the continually changing landscape of sequencing technology is a particular challenge when maintaining an assembly software package such as ABySS that spans years of development. It also offers opportunities for better assemblies if new algorithms capitalize on the technology improvements.
 ---
-
-Adapting to the continually changing landscape of sequencing technology is a particular challenge when maintaining an assembly software package such as ABySS that spans years of development. It also offers opportunities for better assemblies if new algorithms capitalize on the technology improvements.
 
 Illumina read lengths were shoter than 50 nucleotides at the initial release of ABySS, and overlapping MiSeq reads now exceed 500 nucleotides. ABySS and other de Bruijn graph (dBG) assemblers use a hash table to store *k*-mers, sequences of *k* nucleotides. A standard hash table requires memory that scales with the value of *k*. To make better use of longer read lengths without a commensurate increase in memory requires space-efficient data structures. In a new release of ABySS, we use spaced seeds to represent large *k*-mers while storing a fraction of their nucleotides. For example, two 32-mer separated by a space of 300 nucleotides represents a dBG comparable to a 364-mer dBG, while using the memory of a 64-mer dBG.
 
