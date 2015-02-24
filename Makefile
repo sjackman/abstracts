@@ -1,6 +1,9 @@
 all:
 
-.PHONY: all
+clean:
+	rm -f *.aux *.html *.log *.out *.pdf *.tex
+
+.PHONY: all clean
 .DELETE_ON_ERROR:
 .SECONDARY:
 
