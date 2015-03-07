@@ -18,4 +18,4 @@ We assemble *Escherichia coli* overlapping MiSeq reads with ABySS producing an a
 
 We present in this work the performance of ABySS, with a detailed look at the data structures used, and the utility of automated finishing. We demonstrate the scalability of these efficient tools to long reads and large genomes.
 
-![Assembly of *E. coli* overlapping MiSeq reads with both ABySS 1.5.2 using a standard de Bruijn Graph and ABySS 1.6.0 using a spaced-seeds de Bruijn Graph. We also reassemble the reference genome using ABySS, disabling all error-removal algorithms, to show the best possible assembly for that value of *k*.](recomb2015-talk.png)
+![Assembly of *E. coli* overlapping MiSeq reads with both ABySS 1.5.2 using a standard de Bruijn Graph and ABySS 1.6.0 using a spaced-seeds de Bruijn Graph. We also reassemble the reference genome using ABySS, disabling all error-removal algorithms, to show the best possible assembly for that value of *k*.](recombseq2015-poster.png)
